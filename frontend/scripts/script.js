@@ -7,7 +7,7 @@ function enterChat(){
 
     const name = document.getElementById('name-input').value;
     const url = window.location.hostname === 'brenoveras.com.br' 
-        ? 'ws://brenoveras.com.br/live-chat-server' 
+        ? 'wss://brenoveras.com.br/live-chat-server' 
         : 'ws://localhost:8080';
     const socket = new WebSocket(`${url}?user=${name}`);
 
