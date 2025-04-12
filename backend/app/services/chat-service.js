@@ -27,7 +27,7 @@ export class ChatService{
     }
 
     getUser(req){
-        const url = new URL(req.url, `http://${req.headers.host}`);
+        const url = new URL(req.url, `https://${req.headers.host}`);
         return url.searchParams.get('user');
     }
 
